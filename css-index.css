@@ -1,0 +1,96 @@
+ body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF4EF;
+    font-family: sans-serif;
+  }
+
+   /* Plantas decorativas fijas en las esquinas de la pantalla */
+  .plant {
+    position: fixed;
+    width: 200px;
+    opacity: 0.6;
+    z-index: 0; /* detrás del contenido */
+  }
+  .plant.tl { top: 0; left: 0; }
+  .plant.tr { top: 0; right: 0; }
+  .plant.bl { bottom: 0; left: 0; }
+  .plant.br { bottom: 0; right: 0; }
+
+
+  .container {
+    width: 260px;   /* mismo ancho que el sobre */
+    margin: 0 auto; /* centrar horizontalmente */
+    text-align: center;
+    position: relative;
+    z-index: 1;     /* sobre el fondo de plantas */
+  }
+  /* Línea superior: Nuestra Fiesta */
+  .title {
+    font-family: "Cambria";
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #65715E;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  /* Nombres alineados al sobre */
+  .names {
+    width: 260px; /* Igual al ancho del sobre */
+    font-family: 'Great Vibes', cursive;
+    color: #4D544A;
+    margin-bottom: 18px;
+    line-height: .75;
+  }
+
+  .name-left {
+    font-size: 4.2rem;
+    text-align: left;
+  }
+
+  .ampersand {
+    font-size: 2.2rem;
+    text-align: center;
+    opacity: 0.7;
+  }
+
+  .name-right {
+    font-size: 4.2rem;
+    text-align: right;
+  }
+
+  /* Sobre */
+  .envelope-img {
+    width: 260px;
+    cursor: pointer;
+  }
+
+  /* Texto debajo del sobre */
+  .click-text {
+    font-family: "Cambria";
+    font-size: 1rem;
+    color: #65715E;
+    margin-top: 12px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Flecha punteada */
+  .arrow-img {
+    width: 80px; /* Ajusta el tamaño de la flecha */
+    margin-top: 6px;
+  }
+
+  .date {
+    font-family: "Cambria", serif;
+    font-size: 1.4rem;
+    color: #65715E;
+    margin-bottom: 12px;
+  }
