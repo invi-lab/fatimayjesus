@@ -1,0 +1,371 @@
+ body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Cambria", serif;
+      background-color: #FFF4EF;
+      color: #4D544A;
+    }
+
+    .container {
+      position: relative;
+      min-height: 100vh;
+      background: url('foto1.jpeg') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom,
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.7) 40%,
+        rgba(255,255,255,0.3) 80%,
+        rgba(255,255,255,0) 100%);
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .names {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      color: #4D544A;
+      margin-bottom: 1.5rem;
+    }
+
+    .verse {
+      font-size: clamp(1rem, 3vw, 1.4rem);
+      margin-bottom: 1rem;
+    }
+
+    .reference {
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+      margin-bottom: 2rem;
+      color: #4D544A;
+    }
+
+    .countdown-title {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      font-weight: bold;
+      color: #4D544A;
+      margin-bottom: 0.5rem;
+    }
+
+    .line {
+      width: 40%;
+      max-width: 200px;
+      height: 2px;
+      background-color: #4D544A;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    flex-wrap: nowrap; /* siempre en línea */
+  }
+
+  .countdown-item {
+    background: #FFF4EF;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4D544A;
+    flex: 1; /* cada bloque se ajusta proporcionalmente */
+    text-align: center;
+    border: 2px solid #4D544A;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 4px 6px 12px rgba(0,0,0,0.1);
+  }
+
+  .countdown-label {
+    font-size: 0.8em;
+    color: #4D544A;
+    margin-top: 5px;
+    display: block;
+  }
+
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .countdown {
+      gap: 8px;
+    }
+    .countdown-item {
+      padding: 8px;
+      font-size: 0.9em;
+      border-radius: 12px 0px 12px 0px;
+    }
+    .countdown-label {
+      font-size: 0.7em;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .countdown {
+      gap: 5px;
+    }
+    .countdown-item {
+      padding: 6px;
+      font-size: 0.8em;
+    }
+    .countdown-label {
+      font-size: 0.65em;
+    }
+  }
+    .event-date {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: #4D544A;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    
+    /* Sección inferior en blanco */ 
+    .event-section { 
+      background-color: #FFF; /* fondo blanco */ 
+      padding: 40px 20px; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+    } /* Tarjeta centrada */ 
+
+    .event-card { 
+      background-color: #FFF4EF; /* color suave */ 
+      border-radius: 190px; 
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1); 
+      padding: 30px; 
+      max-width: 500px; 
+      width: 100%; 
+      text-align: center; } /* Título */ 
+      
+    .event-title { 
+      font-family: 'Great Vibes', cursive;
+        font-size: clamp(1.5rem, 4vw, 2rem); 
+        color: #4D544A;
+        margin-bottom: 15px; 
+      } /* Dirección */ 
+      
+    .event-address {
+         font-size: clamp(1rem, 2.5vw, 1.2rem);
+         color: #65715E; 
+         margin-bottom: 20px; 
+        } /* Ícono y texto */ 
+
+    /* Ícono con fondo redondo */ 
+    .icon-circle { 
+      width: 80px; 
+      height: 80px; 
+      background-color: #4D544A; /* color de fondo */ 
+      border-radius: 50%; /* círculo perfecto */
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      margin: 0 auto; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    } 
+    .icon-circle i { 
+      color: #FFF4EF; /* color del ícono */ 
+      font-size: 1.5rem; 
+    } /* Texto debajo del ícono */ 
+    .location-text { 
+      font-size: 1rem; 
+      color: #65715E; 
+      font-weight: bold; 
+      margin-top: 10px; 
+    }
+     /* Sección de foto */
+.photo-section {
+  position: relative;
+  width: 100%;
+  height: 150vh; /* ajusta la altura según lo que quieras mostrar */
+  overflow: hidden;
+}
+
+/* Imagen de fondo */
+.photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay superior */
+.photo-overlay-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px; /* altura del fade superior */
+  background: linear-gradient(to bottom, #FFF 0%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
+
+/* Overlay inferior */
+.photo-overlay-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px; /* altura del fade inferior */
+  background: linear-gradient(to top, #FFF 0%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
+
+/* Sección de itinerario */
+/* Sección de itinerario */
+.itinerary-section {
+  background-color: #FFF4EF;
+  padding: 80px 90px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  justify-items: center;
+}
+
+/* Fade superior */
+.itinerary-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to bottom, #FFF 0%, rgba(255,255,255,0) 100%);
+  z-index: 1;
+}
+
+.itinerary-overlay-bottom { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 150px; 
+  background: linear-gradient(to top, #FFF 0%, rgba(255,255,255,0) 100%); 
+  z-index: 3; }
+
+.itinerary-title {
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.3rem;
+  color: #4D544A;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Línea central */
+.timeline {
+  position: relative;
+  width: 2px;
+  background-color: #4D544A;
+  margin: 0 auto;
+  min-height: 600px;
+  z-index: 2;
+}
+
+/* Ítems */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-item.left {
+  left: -1800%;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: -85%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* Texto */
+.timeline-text {
+  font-size: 1.1rem;
+  color: #65715E;
+  max-width: 200px;
+  position: relative;
+  text-align: center;
+}
+
+/* Corazón marcador sobre la línea */
+.timeline-item::before {
+  content: "\f004"; /* Font Awesome corazón */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  font-size: 1.2rem;
+  color: #4D544A; /* mismo color que la línea */
+  background: #FFF4EF;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.timeline-icon {
+  font-size: 1.8rem;
+}
+
+/* Posición del corazón */
+.timeline-item.left::before {
+  right: -12px;
+}
+
+.timeline-item.right::before {
+  left: -12px;
+}
+
+/* Fotos en las esquinas */
+.corner-photo {
+  position: absolute;
+  width: 220px;   /* ajusta tamaño */
+  height: auto;
+  opacity: 0.8;   /* un poco transparente para no tapar el contenido */
+  z-index: 0;     /* detrás del timeline */
+}
+
+.top-left {
+  top: 8px;
+  left: 1px;
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  bottom: 8px;
+  right: 1px;
+}
+
+.dresscode-photo {
+  padding: -58px 90px;
+  height: 150px;
+  
+}
