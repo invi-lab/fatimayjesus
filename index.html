@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fátima y Jesús</title>
+
+<!-- Tipografía elegante para nombres -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF4EF;
+    font-family: sans-serif;
+  }
+
+   /* Plantas decorativas fijas en las esquinas de la pantalla */
+  .plant {
+    position: fixed;
+    width: 200px;
+    opacity: 0.6;
+    z-index: 0; /* detrás del contenido */
+  }
+  .plant.tl { top: 0; left: 0; }
+  .plant.tr { top: 0; right: 0; }
+  .plant.bl { bottom: 0; left: 0; }
+  .plant.br { bottom: 0; right: 0; }
+
+
+  .container {
+    width: 260px;   /* mismo ancho que el sobre */
+    margin: 0 auto; /* centrar horizontalmente */
+    text-align: center;
+    position: relative;
+    z-index: 1;     /* sobre el fondo de plantas */
+  }
+  /* Línea superior: Nuestra Fiesta */
+  .title {
+    font-family: "Cambria";
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #65715E;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  /* Nombres alineados al sobre */
+  .names {
+    width: 260px; /* Igual al ancho del sobre */
+    font-family: 'Great Vibes', cursive;
+    color: #4D544A;
+    margin-bottom: 18px;
+    line-height: .75;
+  }
+
+  .name-left {
+    font-size: 4.2rem;
+    text-align: left;
+  }
+
+  .ampersand {
+    font-size: 2.2rem;
+    text-align: center;
+    opacity: 0.7;
+  }
+
+  .name-right {
+    font-size: 4.2rem;
+    text-align: right;
+  }
+
+  /* Sobre */
+  .envelope-img {
+    width: 260px;
+    cursor: pointer;
+  }
+
+  /* Texto debajo del sobre */
+  .click-text {
+    font-family: "Cambria";
+    font-size: 1rem;
+    color: #65715E;
+    margin-top: 12px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Flecha punteada */
+  .arrow-img {
+    width: 80px; /* Ajusta el tamaño de la flecha */
+    margin-top: 6px;
+  }
+
+  .date {
+    font-family: "Cambria", serif;
+    font-size: 1.4rem;
+    color: #65715E;
+    margin-bottom: 12px;
+  }
+</style>
+</head>
+
+<body>
+<!-- Plantas decorativas fijas en las esquinas de la pantalla -->
+<img src="ornamento-1.png" class="plant tl" alt="Planta esquina superior izquierda">
+<img src="ornamento-4.png" class="plant br" alt="Planta esquina inferior derecha">
+
+<div class="container">
+  <!-- Línea superior -->
+  <div class="title">Nuestra Boda</div>
+
+  <!-- Nombres alineados al sobre -->
+  <div class="names">
+    <div class="name-left">Fátima</div>
+    <div class="ampersand">y</div>
+    <!--<div class="ampersand">&</div>-->
+    <div class="name-right">Jesús</div>
+  </div>
+
+  <div class="date">21 • Marzo • 2026 </div>
+
+  <!-- Sobre -->
+  <img src="sobre-green.png" class="envelope-img" id="envelope" alt="Abrir invitación">
+
+  <!-- Texto debajo del sobre -->
+  <div class="click-text">
+    Clic para abrir <br> la invitación
+    <!-- Flecha punteada -->
+  </div>
+</div>
+
+<script>
+  const envelope = document.getElementById('envelope');
+  envelope.addEventListener('click', () => {
+    envelope.style.transform = "scale(1.1)";
+    setTimeout(() => {
+      window.location.href = "invitacion.html";
+    }, 500);
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
