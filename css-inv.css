@@ -10,7 +10,7 @@
     .container {
       position: relative;
       min-height: 100vh;
-      background: url('foto1.jpeg') no-repeat center center;
+      background: url('SAVETHEDATE-15.jpg') no-repeat center center;
       background-size: cover;
       display: flex;
       flex-direction: column;
@@ -374,3 +374,4 @@
   height: 100px;
   
 }
+
