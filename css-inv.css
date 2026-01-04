@@ -77,7 +77,7 @@
     gap: 15px;
     margin-top: 10px;
     margin-bottom: 15px;
-    flex-wrap: nowrap; /* siempre en línea */
+    flex-wrap: nowrap; 
   }
 
   .countdown-item {
@@ -86,7 +86,7 @@
     font-size: 1.2em;
     font-weight: bold;
     color: #4D544A;
-    flex: 1; /* cada bloque se ajusta proporcionalmente */
+    flex: 1; 
     text-align: center;
     border: 2px solid #4D544A;
     border-radius: 20px 0px 20px 0px;
@@ -100,7 +100,6 @@
     display: block;
   }
 
-  /* Ajustes para pantallas pequeñas */
   @media (max-width: 600px) {
     .countdown {
       gap: 8px;
@@ -135,75 +134,74 @@
     }
 
     
-    /* Sección inferior en blanco */ 
     .event-section { 
-      background-color: #FFF; /* fondo blanco */ 
+      background-color: #FFF; 
       padding: 40px 20px; 
       display: flex; 
       justify-content: center; 
       align-items: center; 
-    } /* Tarjeta centrada */ 
+    }  
 
     .event-card { 
-      background-color: #FFF4EF; /* color suave */ 
+      background-color: #FFF4EF; 
       border-radius: 190px; 
       box-shadow: 0 6px 20px rgba(0,0,0,0.1); 
       padding: 30px; 
       max-width: 500px; 
       width: 100%; 
-      text-align: center; } /* Título */ 
+      text-align: center; 
+    } 
       
     .event-title { 
       font-family: 'Great Vibes', cursive;
         font-size: clamp(1.5rem, 4vw, 2rem); 
         color: #4D544A;
         margin-bottom: 15px; 
-      } /* Dirección */ 
+      } 
       
     .event-address {
          font-size: clamp(1rem, 2.5vw, 1.2rem);
          color: #65715E; 
          margin-bottom: 20px; 
-        } /* Ícono y texto */ 
+        } 
 
-    /* Ícono con fondo redondo */ 
     .icon-circle { 
       width: 80px; 
       height: 80px; 
-      background-color: #4D544A; /* color de fondo */ 
-      border-radius: 50%; /* círculo perfecto */
+      background-color: #4D544A; 
+      border-radius: 50%;
       display: flex; 
       justify-content: center; 
       align-items: center; 
       margin: 0 auto; 
       box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
     } 
+
     .icon-circle i { 
-      color: #FFF4EF; /* color del ícono */ 
+      color: #FFF4EF;
       font-size: 1.5rem; 
-    } /* Texto debajo del ícono */ 
+    } 
     .location-text { 
       font-size: 1rem; 
       color: #65715E; 
       font-weight: bold; 
       margin-top: 10px; 
     }
-     /* Sección de foto */
+
 .photo-section {
   position: relative;
   width: 100%;
-  height: 150vh; /* ajusta la altura según lo que quieras mostrar */
+  height: 150vh; 
   overflow: hidden;
 }
 
 .photo-section-car {
   position: relative;
   width: 100%;
-  height: 280vh; /* ajusta la altura según lo que quieras mostrar */
+  height: 280vh; 
   overflow: hidden;
 }
 
-/* Imagen de fondo */
 .photo-img {
   width: 100%;
   height: 100%;
@@ -211,30 +209,26 @@
   display: block;
 }
 
-/* Overlay superior */
 .photo-overlay-top {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 300px; /* altura del fade superior */
+  height: 300px; 
   background: linear-gradient(to bottom, #FFF 0%, rgba(255,255,255,0) 100%);
   z-index: 2;
 }
 
-/* Overlay inferior */
 .photo-overlay-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 300px; /* altura del fade inferior */
+  height: 300px;
   background: linear-gradient(to top, #FFF 0%, rgba(255,255,255,0) 100%);
   z-index: 2;
 }
 
-/* Sección de itinerario */
-/* Sección de itinerario */
 .itinerary-section {
   background-color: #FFF4EF;
   padding: 80px 90px;
@@ -244,7 +238,6 @@
   justify-items: center;
 }
 
-/* Fade superior */
 .itinerary-overlay {
   position: absolute;
   top: 0;
@@ -274,7 +267,6 @@
   z-index: 2;
 }
 
-/* Línea central */
 .timeline {
   position: relative;
   width: 2px;
@@ -284,7 +276,6 @@
   z-index: 2;
 }
 
-/* Ítems */
 .timeline-item {
   position: relative;
   width: 50%;
@@ -305,7 +296,6 @@
   text-align: left;
 }
 
-/* Texto */
 .timeline-text {
   font-size: 1.1rem;
   color: #65715E;
@@ -314,15 +304,14 @@
   text-align: center;
 }
 
-/* Corazón marcador sobre la línea */
 .timeline-item::before {
-  content: "\f004"; /* Font Awesome corazón */
+  content: "\f004"; 
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position: absolute;
   top: 0;
   font-size: 1.2rem;
-  color: #4D544A; /* mismo color que la línea */
+  color: #4D544A; 
   background: #FFF4EF;
   border-radius: 50%;
   padding: 6px;
@@ -333,7 +322,6 @@
   font-size: 1.8rem;
 }
 
-/* Posición del corazón */
 .timeline-item.left::before {
   right: -12px;
 }
@@ -342,13 +330,12 @@
   left: -12px;
 }
 
-/* Fotos en las esquinas */
 .corner-photo {
   position: absolute;
-  width: 220px;   /* ajusta tamaño */
+  width: 220px;   
   height: auto;
-  opacity: 0.8;   /* un poco transparente para no tapar el contenido */
-  z-index: 0;     /* detrás del timeline */
+  opacity: 0.8;  
+  z-index: 0;   
 }
 
 .top-left {
@@ -381,6 +368,7 @@
   height: 100px;
   
 }
+
 
 
 
