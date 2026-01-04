@@ -7,6 +7,10 @@
       color: #4D544A;
     }
 
+    .a { 
+     text-decoration: none;
+    }
+
     .container {
       position: relative;
       min-height: 100vh;
@@ -368,6 +372,7 @@
   height: 100px;
   
 }
+
 
 
 
