@@ -24,9 +24,9 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(to bottom,
-        rgba(255,255,255,0.95) 0%,
-        rgba(255,255,255,0.7) 40%,
-        rgba(255,255,255,0.3) 80%,
+         rgba(255,255,255,0.6) 0%, 
+        rgba(255,255,255,0.4) 40%,
+        rgba(255,255,255,0.2) 80%, 
         rgba(255,255,255,0) 100%);
       z-index: 1;
     }
@@ -374,4 +374,5 @@
   height: 100px;
   
 }
+
 
