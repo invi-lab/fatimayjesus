@@ -133,9 +133,9 @@
     .event-date {
       font-size: clamp(1rem, 2.5vw, 1.2rem);
       color: #4D544A;
-      margin-top: 5px;
+      margin-top: -995px;
       font-weight: bold;
-     text-shadow: 2px 2px 4px white;
+     text-shadow: 2px 2px 4px red;
     }
 
     
@@ -374,6 +374,7 @@
   height: 100px;
   
 }
+
 
 
 
