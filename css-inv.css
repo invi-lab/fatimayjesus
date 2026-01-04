@@ -42,7 +42,7 @@
       font-family: 'Great Vibes', cursive;
       font-size: clamp(2.5rem, 8vw, 5rem);
       color: #4D544A;
-      margin-bottom: 15rem;
+      margin-bottom: 10rem;
     }
 
     .verse {
@@ -381,6 +381,7 @@
   height: 100px;
   
 }
+
 
 
 
