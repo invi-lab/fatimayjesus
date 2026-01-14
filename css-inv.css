@@ -354,6 +354,11 @@
   right: 1px;
 }
 
+.top-right-i {
+  top: 780px;
+  right: 1px;
+}
+
 .bottom-left {
   bottom: 8px;
   left: 1px;
@@ -374,6 +379,7 @@
   height: 100px;
   
 }
+
 
 
 
