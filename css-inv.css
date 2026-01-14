@@ -350,13 +350,13 @@
 }
 
 .top-right {
-  top: 20px;
-  right: 20px;
+  top: 8px;
+  right: 1px;
 }
 
 .bottom-left {
-  bottom: 20px;
-  left: 20px;
+  bottom: 8px;
+  left: 1px;
 }
 
 .bottom-right {
@@ -374,6 +374,7 @@
   height: 100px;
   
 }
+
 
 
 
